@@ -4,7 +4,7 @@
   "description": "Birthday greetings..",
   "main": " ",
   "scripts": {
-    "start": "http-server -p process.env.PORT || http-server -p 8081"
+    "start": "cross-env http-server -p PORT || http-server -p 8081"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   },
   "engines": {
     "node": "10.x"
+  },
+  "devDependencies": {
+    "crossenv": "0.0.2-security"
   }
 }
